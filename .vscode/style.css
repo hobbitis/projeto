@@ -25,6 +25,7 @@
 
 body {
   background: var(--foto-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -138,4 +139,14 @@ footer {
 
 footer a {
   text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --foto-url: url("./assets/bg-desktop.jpg");
+  }
+
+  .light {
+    --foto-url: url("./assets/bg-desktop-light.jpg");
+  }
 }
